@@ -11,6 +11,15 @@ body {
     padding: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Фиксированная высота для контейнера */
+    height: 200px;
+}
+
 input[type="text"] {
     padding: 10px;
     font-size: 16px;
@@ -43,6 +52,11 @@ button:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
+button:active {
+    background-color: #007bff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
 span {
     margin-top: 20px;
     font-size: 18px;
@@ -55,5 +69,9 @@ span {
 }
 
 .hidden {
-    display: none;
+    visibility: hidden; /* Изменено на скрытие элемента, но сохранение его места */
+}
+
+.error {
+    color: red;
 }
