@@ -4,6 +4,7 @@ let edited = document.querySelector('#edited');
 let editedText = document.querySelector('.edited_text');
 let err = document.querySelector("#error");
 let copyBtn = document.querySelector('#copy')
+let goBtn = document.querySelector('#go')
 
 
 button.addEventListener('click', () => {
@@ -15,6 +16,8 @@ button.addEventListener('click', () => {
     edited.textContent = text;
     editedText.classList.remove('hidden');
     copyBtn.classList.remove('hidden')
+    goBtn.classList.remove('hidden')
+    goBtn.href = text
 })
 
 
