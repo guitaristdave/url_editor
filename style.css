@@ -11,6 +11,10 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -47,12 +51,12 @@ button, .btn {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
+button:hover, .btn:hover {
     background-color: #0056b3;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-button:active {
+button:active, .btn:active {
     background-color: #007bff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
