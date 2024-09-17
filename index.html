@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>URL Editor</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <title>SmartHorizon URL Editor</title>
+  </head>
+  <body>
     <body>
-        <div class="container">
-            <input type="text" name="link" id="link" style="width: 600px;">
-            <button id="link_btn">Исправить</button><br>
-            <span class="edited_text hidden"><b>Исправленная ссылка: </b></span><span id="edited"></span>
+      <div class="container">
+        <a href="https://smarthorizon.ru/" target="_blank"><img class="banner" src="./banner.png" alt="banner" /></a>
+        <div class="input_block">
+          <input type="text" name="link" id="link" style="width: 600px" />
+          <button id="link_btn">Исправить</button><br />
+        </div>
+
+        <div class="btns">
+          <div class="link">
+            <span class="edited_text hidden">Исправленная ссылка: </span>
+            <span id="edited"></span>
+          </div>
+          <div class="copies">
             <a class="btn hidden" id="go" href="" target="_blank">Перейти</a>
             <button id="copy" class="hidden">Скопировать</button>
+          </div>
         </div>
+      </div>
     </body>
-</body>
+  </body>
 </html>

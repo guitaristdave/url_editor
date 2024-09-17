@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -19,9 +19,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    gap: 25px;
     /* Фиксированная высота для контейнера */
-    height: 200px;
 }
 
 input[type="text"] {
@@ -34,16 +34,34 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border-color: #007bff;
+    border-color: #3253ff;
     outline: none;
+}
+.banner {
+    max-width: 450px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copies {
+    display: flex;
+    gap: 15px;
 }
 
 button, .btn {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #007bff;
+    background-color: #3253ff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -52,23 +70,19 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-    background-color: #0056b3;
+    background-color: #2d3d6c;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 button:active, .btn:active {
-    background-color: #007bff;
+    background-color: #3253ff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-span {
-    margin-top: 20px;
-    font-size: 18px;
-}
+
 
 #edited {
-    font-weight: bold;
-    color: #007bff;
+    color: #3253ff;
     word-wrap: break-word;
 }
 
